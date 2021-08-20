@@ -5,135 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Inc. Colombia</title>
-    <link rel="icon" href="img/Apple-Logo-PNG.ico">    
+    <link rel="icon" href="img/Apple-Logo-PNG.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--
+        También utilicé FontAwesome para adquirir algunos íconos interesantes.
+    -->
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css" />
 </head>
 <body>
-    <!-- Ya que no contamos con css, organicé el contenido con tables. -->
+    <!-- Posterior al aprendizaje de CSS, se modificó la organización de la página -->
     <!-- Header -->
     <header id="inicio">
-        <table>
-            <tr>
-                <th><img src="img/Apple-Logo-PNG.png" width="200px" height="200px"></th>
-                <th><h1>Apple Inc. Colombia</h1></th>
-            </tr>
-        </table>
+        <h1 class="w-100 bg-dark text-light text-center mb-0 py-5 h-100 border-bottom border-light">Apple Inc. Colombia</h1>
     </header>
 
     <!-- Menú -->
-    <nav>
-        <table>
-            <tr>
-                <th><a href="https://www.apple.com/" target="_blank" rel="follow">Home</a></th>
-                <th><a href="https://www.apple.com/store" target="_blank" rel="follow">Tienda</a></th>
-                <th><a href="https://www.apple.com/us-hed/shop/back-to-school" target="_blank" rel="follow">De vuelta a clases</a></th>
-                <th><a href="#">De vuelta a clases</a></th>
-                <th><a href="#">Historial de compras</a></th>
-            </tr>
-        </table>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+        <ul class="navbar-nav">
+            <li class="nav-item d-flex align-items-center justify-content-center"><a class="navbar-brand ml-2 mt-1 p-0" href="https://www.apple.com/" target="_blank" rel="follow"><i class="fab fa-apple h1"></i></a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="https://www.apple.com/store" target="_blank" rel="follow">Tienda</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="https://www.apple.com/us-hed/shop/back-to-school" target="_blank" rel="follow">De vuelta a clases</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="#">Historial de compras</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="#">Registro de productos</a></li>
+        </ul>
     </nav>
 
     <!-- Section -->
     <!-- Donde se visualizarán los productos -->
     <section>
-        <h2>Productos ofertados en Colombia</h2>
+        <h2 class="w-100 py-5 text-dark text-center border-bottom border-dark mb-0">Productos ofertados en Colombia</h2>
 
         <!-- Producto #1: IPad -->
-        <div>
-            <h3>IPad</h3>
-            <h4>Precio: $ 1'600.000 - 3'119.000 (Varía según el modelo)</h3>
-            <p>
+        <div class="w-100">
+            <h3 class="w-100 py-3 text-dark text-center border-bottom border-dark">IPad</h3>
+            <p class="w-100 text-dark text-center px-5 py-1 mb-3">
                 El nuevo iPad combina una enorme multitud de capacidades con una facilidad de uso y una versatilidad incomparables.
                 Con el potente chip A12 Bionic, la compatibilidad con el Apple Pencil y el Smart Keyboard, puedes hacer cosas increíbles.
             </p>
+            <h4 class="w-100 text-dark px-5 py-1 mb-1">Precio</h4>
+            <p class="text-dark text-justify px-5 mb-3">
+                $ 1'600.000 - 3'119.000 (Varía según el modelo).
+            </p>
 
             <!-- Características -->
-            <h4>Características</h4>
-            <ol>
+            <h4 class="w-100 text-dark py-1 px-5 mb-1">Características</h4>
+            <ol class="w-100 text-dark mb-4 pl-5">
                 <li>Tamaño de 12.9 a 7.9 pulgadas</li>
                 <li>Conector USB-C y conector lightning</li>
                 <li>Compatibilidad 5G y 4G</li>
             </ol>
 
-            <!-- Contenedor de imágenes -->
-            <div>
-                <img src="img/ipad1.jpg" width="250" height="250">
-                <img src="img/ipad2.jpg" width="250" height="250">
-                <img src="img/ipad3.jpg" width="250" height="250">
-            </div>
+            <!-- Tabla de imágenes -->
+            <table class="w-100">
+                <tr class="w-100">
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/ipad1.jpg" height="150"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/ipad2.jpg" height="150"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/ipad3.jpg" height="150"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-bottom border-top border-secondary py-2"><img src="img/ipad4.jpg" height="150"/></th>
+                </tr>
+            </table>
         </div>
 
         <!-- Producto #2: IMac -->
-        <div>
-            <h3>Mac</h3>
-            <h4>Precio: $ 4'000.000 - $ 10'000.000 (Varía según el modelo)</h3>
-            <p>
+        <div class="w-100">
+            <!-- Titulo + Descripción -->
+            <h3 class="w-100 py-3 text-dark text-center border-bottom border-dark">Mac</h3>
+            <p class="w-100 text-dark text-center px-5 py-1 mb-3">
                 Dile hola al nuevo iMac. 
                 Creado con lo mejor de Apple, los superpoderes del chip M1 y un 
                 diseño que brilla en todos lados. En resumen, es justo lo que necesitabas.
             </p>
+
+            <!-- Precio -->
+            <h4 class="w-100 text-dark px-5 py-1 mb-1">Precio</h4>
+            <p class="text-dark text-justify px-5 mb-3">
+                $ 4'000.000 - $ 10'000.000 (Varía según el modelo).
+            </p>
+            
             <!-- Características -->
-            <h4>Características</h4>
-            <ol>
+            <h4 class="w-100 text-dark py-1 px-5 mb-1">Características</h4>
+            <ol class="w-100 text-dark mb-4 pl-5">
                 <li>Tamaño de 13.3 a 16 pulgadas</li>
                 <li>Apple M1 chip e Intel Core i9</li>
                 <li>Memoria unificada de 16GB y 64GB</li>
             </ol>
 
-            <!-- Contenedor de imágenes -->
-            <!-- Se utilizan % para mantener la relación de aspecto -->
-            <div>
-                <img src="img/mac1.jpg" width="25%">
-                <img src="img/mac2.jpg" width="25%">
-                <img src="img/mac3.jpg" width="25%">
-            </div>
+            <!-- Tabla de imágenes -->
+            <table class="w-100">
+                <tr class="w-100">
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/mac1.jpg" height="100"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/mac2.jpg" height="100"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/mac3.jpg" height="100"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-bottom border-top border-secondary py-2"><img src="img/mac4.jpg" height="100"/></th>
+                </tr>
+            </table>
         </div>
 
         <!-- Producto #3: IPod -->
-        <div>
-            <h3>IPod</h3>
-            <h4>Precio: $ 1'250.000 - $2'959.000 (Varía según el modelo)</h4>
-            <p>
+        <div class="w-100">
+            <!--  Titulo + Descripcion-->
+            <h3 class="w-100 py-3 text-dark text-center border-bottom border-dark">IPod</h3>
+            <p class="w-100 text-dark text-center px-5 py-1 mb-3">
                 ¿Amas la música? Puedes guardar más canciones que nunca en el iPod touch, 
                 que ahora viene con hasta 256 GB de almacenamiento.
             </p>
+
+            <!-- Precio -->
+            <h4 class="w-100 text-dark px-5 py-1 mb-1">Precio</h4>
+            <p class="text-dark text-justify px-5 mb-3">
+                $ 1'250.000 - $2'959.000 (Varía según el modelo).
+            </p>
+            
             <!-- Características -->
-            <h4>Características</h4>
-            <ol>
+            <h4 class="w-100 text-dark py-1 px-5 mb-1">Características</h4>
+            <ol class="w-100 text-dark mb-4 pl-5">
                 <li>De 32GB a 256GB de almacenamiento</li>
                 <li>4 pulgadas del tamaño diagonal de la pantalla</li>
                 <li>Chip A10</li>
             </ol>
 
-            <!-- Contenedor de imágenes -->
-            <!-- Se utilizan % para mantener la relación de aspecto -->
-            <div>
-                <img src="img/ipod1.png" width="25%">
-                <img src="img/ipod2.png" width="25%">
-                <img src="img/ipod3.jpg" width="25%">
-            </div>
+            <!-- Tabla de imágenes -->
+            <table class="w-100">
+                <tr class="w-100">
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/ipod1.png" height="100"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/ipod2.png" height="100"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-right border-bottom border-top border-secondary py-2"><img src="img/ipod3.jpg" height="100"/></th>
+                    <th class="d-inline-flex justify-content-center align-items-center w-25 border-bottom border-top border-secondary py-2"><img src="img/ipod4.jpg" height="100"/></th>
+                </tr>
+            </table>
         </div>
-
     </section>
 
     <!-- Pie de página -->
-    <footer>
-        <table>
-            <tr>
-                <th><img src="img/apple_logo_1.svg" width="400" height="400"></th>
-                <th>
-                    <h4>Información de contacto (Cali, Colombia)</h4>
-                    <p>
-                    Mac Center<br>
-                    Dirección: Calle 31 #44 - 239<br>
-                    Teléfono: 2856064<br>
-                    Página web: <a href="http://www.mac-center.com/" target="_blank" rel="follow">http://www.mac-center.com/</a><br>
-                    Quejas y reclamos: info@mac-center.com<br>
+    <footer class="w-100 bg-secondary py-4">
+        <table class="w-100">
+            <tr class="w-100">
+                <th class="w-50 text-center">
+                    <i class="fab fa-apple text-light display-1"></i>
+                    <h3 class="text-light">Apple Inc. Colombia &#169;</h3>
+                </th>                
+                <th class="w-50 text-light">
+                    <h5>Información de contacto (Cali, Colombia)</h5>
+                    <p class="m-0 lead">
+                        Mac Center<br>
+                        Dirección: Calle 31 #44 - 239<br>
+                        Teléfono: 2856064<br>
+                        Página web: <a href="http://www.mac-center.com/" target="_blank" rel="follow">http://www.mac-center.com/</a><br>
+                        Quejas y reclamos: info@mac-center.com<br>
                     </p>
-                    
                 </th>
-                <th><a href="#inicio">Subir al inicio</a></th>
             </tr>
         </table>
+
+        
+        
+        
+                    
     </footer>
+
+    <a class="fixed-bottom p-2 text-right text-light" href="#inicio">Subir al inicio</a>
 </body>
 </html>
