@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de productos | Apple Inc. Colombia</title>
+    <link rel="icon" href="img/Apple-Logo-PNG.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--
+        Utilicé FontAwesome para adquirir algunos íconos interesantes.
+    -->
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header id="inicio">
+        <h1 class="w-100 bg-dark text-light text-center mb-0 py-5 h-100 border-bottom border-light">Apple Inc. Colombia</h1>
+    </header>
+
+    <!-- Menú -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+        <ul class="navbar-nav">
+            <li class="nav-item d-flex align-items-center justify-content-center"><a class="navbar-brand ml-2 mt-1 p-0" href="https://www.apple.com/" target="_blank" rel="follow"><i class="fab fa-apple h1"></i></a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="index.html">Inicio</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="https://www.apple.com/store" target="_blank" rel="follow">Tienda</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="https://www.apple.com/us-hed/shop/back-to-school" target="_blank" rel="follow">De vuelta a clases</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="#">Historial de compras</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link text-light py-0" href="#">Registro de productos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section -->
+    <section class="w-100">
+        <h2 class="w-100 text-dark bg-light py-4 text-center border-bottom border-dark mb-0">Registro de productos</h2>
+
+        <!-- Para agregar fotos del producto -->
+        <h4 class="w-100 px-5 py-3 text-dark">Fotos del producto</h4>
+        <table class="w-100 mb-5">
+            <tr class="w-100">
+                <th class="w-25 d-inline-flex justify-content-center align-items-center m-0 border-right border-secondary"><button class="btn btn-secondary"><i class="fas fa-plus display-1"></i></button></th>
+                <th class="w-50 d-inline-flex justify-content-center align-items-center m-0 border-right border-secondary"><button class="btn btn-secondary"><i class="fas fa-plus display-1"></i></button></th>
+                <th class="w-25 d-inline-flex justify-content-center align-items-center m-0"><button class="btn btn-secondary"><i class="fas fa-plus display-1"></i></button></th>
+            </tr>
+        </table>
+
+        <!-- Para agregar datos del producto -->
+        <form class="w-100 px-5 mb-5">
+            <div class="form-group">
+              <h5>Nombre o título del producto</h5>
+              <input type="text" class="form-control" placeholder="IPad, IMac, IPhone ...">
+            </div>
+            <div class="form-group">
+                <h5>Precio del producto</h5>
+                <input type="text" class="form-control" placeholder="100000, 15000">
+            </div>
+
+            <!-- Descripción del producto-->
+            <div class="form-group">
+                <h5>Descripcion del producto</h5>
+                <textarea class="form-control"></textarea>
+            </div>
+
+            <!-- Características del producto-->
+            <div class="form-group">
+                <h5>Características del producto</h5>
+                <table class="w-100 mb-3">
+                    <tr class="w-100">
+                        <th class="w-75 pr-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="numeracion1">1.</span>
+                                  </div>
+                                  <input type="text" class="form-control" aria-describedby="numeracion1">
+                            </div>
+                            
+                        </th>
+                        <th><button class="btn btn-secondary"><i class="fas fa-plus"></i></button></th>
+                    </tr>
+                </table>                
+            </div>
+
+            <button type="submit" class="btn btn-secondary w-100 m-auto py-4"><span class="h5">Registrar producto</span></button>
+          </form>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="w-100 bg-secondary py-4">
+        <table class="w-100">
+            <tr class="w-100">
+                <th class="w-50 text-center">
+                    <i class="fab fa-apple text-light display-1"></i>
+                    <h3 class="text-light">Apple Inc. Colombia &#169;</h3>
+                </th>                
+                <th class="w-50 text-light">
+                    <h5>Información de contacto (Cali, Colombia)</h5>
+                    <p class="m-0 lead">
+                        Mac Center<br>
+                        Dirección: Calle 31 #44 - 239<br>
+                        Teléfono: 2856064<br>
+                        Página web: <a href="http://www.mac-center.com/" target="_blank" rel="follow">http://www.mac-center.com/</a><br>
+                        Quejas y reclamos: info@mac-center.com<br>
+                    </p>
+                </th>
+            </tr>
+        </table>    
+    </footer>
+    
+    <a class="fixed-bottom p-2 text-right text-light" href="#inicio">Subir al inicio</a>
+</body>
+</html>
